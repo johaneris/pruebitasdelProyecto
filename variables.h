@@ -6,7 +6,6 @@ using namespace std;
 #define MAX_APPOINTMENT 50
 
 struct SCHEDULE{
-   char date[8];
     char hour[2];
     char minute[2]; 
 };

@@ -28,18 +28,18 @@ void clearScreen();
 void askData(){
     APPOINTMENT a;
     a.id = getValidID();
-    cout << "\033[1;32mIngrese el numero de su cita: \033[0m";
+    cout << "\033[1;35mIngrese el numero de su cita: \033[0m";
     cin >> a.id;
     cin.ignore(); 
-    cout << "\033[1;32mIngrese su nombre: \033[0m";
+    cout << "\033[1;35mIngrese su nombre: \033[0m";
     scanf(" %[^\n]", a.namePatient);
-    cout << "\033[1;32mIngrese el tratamiento: \033[0m";
+    cout << "\033[1;35mIngrese el tratamiento: \033[0m";
     scanf(" %[^\n]", a.treatment);
-    cout << "\033[1;32mIngrese la fecha de la cita (ddmmyyyy): \033[0m";
+    cout << "\033[1;35mIngrese la fecha de la cita (ddmmyyyy): \033[0m";
     scanf(" %[^\n]", a.date);
-    cout << "\033[1;32mIngrese la hora de la cita (hh): \033[0m";
+    cout << "\033[1;35mIngrese la hora de la cita (hh): \033[0m";
     scanf(" %[^\n]", a.hour);
-    cout << "\033[1;32mIngrese los minutos de la cita (mm): \033[0m";
+    cout << "\033[1;35mIngrese los minutos de la cita (mm): \033[0m";
     scanf(" %[^\n]", a.minute);
     addAppointement(&a);
 }
